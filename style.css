@@ -499,4 +499,14 @@ ul.timeline li::before {
         height: 250px;
         flex: 0 0 250px;
     }
+}/* --- ЗАЩИТА ФОТОГРАФИЙ ОТ КОПИРОВАНИЯ --- */
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
