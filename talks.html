@@ -192,6 +192,12 @@
     <footer class="footer">
         <p>&copy; 2026 Marie-Caroline L. Pons. All rights reserved. | Last updated: April 2026</p>
     </footer>
-
+<script>
+        document.addEventListener('contextmenu', function(e) {
+            if (e.target.tagName === 'IMG') {
+                e.preventDefault();
+            }
+        });
+    </script>
 </body>
 </html>
