@@ -56,7 +56,13 @@
             <p>Nepal has become my second home and I am deeply grateful to all the people I met and shared their lives with. Nepal is also the land where I met my life partner and where our family was born.</p>
         </section>
     </main>
-
+<script>
+        document.addEventListener('contextmenu', function(e) {
+            if (e.target.tagName === 'IMG') {
+                e.preventDefault();
+            }
+        });
+    </script>
     <footer class="footer">
         <p>&copy; 2026 Marie-Caroline L. Pons. All rights reserved. | Last updated: April 2026</p>
     </footer>
