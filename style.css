@@ -567,4 +567,9 @@ ul.timeline li::before {
     .gallery-btn {
         display: none;
     }
-}
+/* Скрываем иконку книги в шапке на мобильных устройствах */
+@media (max-width: 768px) {
+    .linguistic-logo {
+        display: none !important;
+    }
+}}
