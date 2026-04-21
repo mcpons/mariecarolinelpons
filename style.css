@@ -2,14 +2,19 @@
    БАЗОВЫЕ НАСТРОЙКИ И ЦВЕТА
    ========================================= */
 :root {
-    --bg-color: #FCFBF8; /* Нейтральный светло-светло серый фон */
-    --header-bg: #F3EFE6; /* Серо-голубой (чуть плотнее, чем aliceblue) */
-    --text-main: #2C3E50; /* Темно-графитовый */
+    --bg-color: #FCFBF8;
+    --header-bg: #F3EFE6;
+    --text-main: #2C3E50;
     --text-muted: #6C7A89;
-    --accent: #34495E; /* Строгий графитово-синий */
+    --accent: #34495E;
     --accent-hover: #2C3E50;
     --border-color: #DFE6E9;
-    --link-color: #5D6D7E; /* Пыльно-синий */
+    --link-color: #5D6D7E;
+}
+
+/* ЗАЩИТА ОТ "ПРЫЖКОВ" ЭКРАНА */
+html {
+    overflow-y: scroll; 
 }
 
 * {
@@ -23,7 +28,6 @@ body {
     background-color: var(--bg-color);
     color: var(--text-main);
     line-height: 1.6;
-    /* Отступ для фикс. шапки на компьютере */
     padding-top: 100px; 
 }
 
@@ -44,7 +48,7 @@ a:hover {
 }
 
 /* =========================================
-   ШАПКА САЙТА (Идеальная линия)
+   ШАПКА САЙТА
    ========================================= */
 .header {
     background-color: var(--header-bg);
@@ -61,12 +65,16 @@ a:hover {
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-/* Профиль (Левая часть) */
 .profile-mini {
     display: flex;
     align-items: center;
     gap: 15px;
-    flex-shrink: 0; /* Запрет на сжатие */
+    flex-shrink: 0; 
+}
+
+/* ПОЛНОСТЬЮ СКРЫВАЕМ КНИГУ ВЕЗДЕ */
+.linguistic-logo {
+    display: none !important;
 }
 
 .profile-img-mini {
@@ -74,8 +82,6 @@ a:hover {
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
-    
-    /* Защита фото от копирования/выделения */
     pointer-events: none;
     user-select: none;
     -webkit-user-drag: none;
@@ -91,7 +97,7 @@ a:hover {
     font-size: 1.3rem;
     margin: 0;
     line-height: 1.2;
-    white-space: nowrap; /* Запрет на перенос имени */
+    white-space: nowrap; 
 }
 
 .profile-info .title {
@@ -100,10 +106,9 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-top: 3px;
-    white-space: nowrap; /* Запрет на перенос профессии */
+    white-space: nowrap; 
 }
 
-/* Навигация и Языки (Правая часть) */
 .header-right {
     display: flex;
     align-items: center;
@@ -122,7 +127,7 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     padding-bottom: 5px;
-    white-space: nowrap; /* Запрет на перенос пунктов меню */
+    white-space: nowrap; 
 }
 
 .top-nav ul li a:hover,
@@ -132,7 +137,6 @@ a:hover {
     border-bottom: 2px solid var(--accent);
 }
 
-/* Переключатель языков */
 .lang-switcher {
     display: flex;
     gap: 12px;
@@ -160,26 +164,26 @@ a:hover {
 }
 
 /* =========================================
-   ОСНОВНОЙ КОНТЕНТ И ДИЗАЙН-ЭЛЕМЕНТЫ
+   ОСНОВНОЙ КОНТЕНТ (ЦЕНТРИРОВАНИЕ)
    ========================================= */
 .content {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto; /* Эта команда держит текст строго по центру! */
     padding: 40px 20px;
 }
 
 .section {
     margin-bottom: 40px;
-    background: transparent; /* Убрали белый фон */
-    padding: 0;              /* Убрали лишние рамки */
+    background: transparent; 
+    padding: 0;              
     border-radius: 0;
-    box-shadow: none;        /* Убрали тень */
+    box-shadow: none;        
 }
 
 .section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    border-bottom: none;     /* Убрали синюю линию под заголовком */
+    border-bottom: none;     
     padding-bottom: 0;
     display: block;
     color: var(--accent);
@@ -189,7 +193,6 @@ a:hover {
     margin-bottom: 15px;
 }
 
-/* Лид-абзац (вводный текст) */
 .lead-text {
     font-size: 1.15rem;
     color: var(--accent);
@@ -197,7 +200,6 @@ a:hover {
     margin-bottom: 25px;
 }
 
-/* Элегантная кнопка (Ghost Button) */
 .btn-outline {
     display: inline-block;
     padding: 10px 24px;
@@ -217,21 +219,6 @@ a:hover {
     text-decoration: none;
 }
 
-/* Теги для публикаций */
-.badge {
-    display: inline-block;
-    padding: 3px 12px;
-    border-radius: 12px;
-    background-color: var(--header-bg);
-    color: var(--accent);
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 8px;
-    border: 1px solid var(--border-color);
-}
-
 .publication-item {
     margin-bottom: 25px;
     padding-bottom: 20px;
@@ -240,16 +227,6 @@ a:hover {
 
 .publication-item:last-child {
     border-bottom: none;
-}
-
-.pub-title {
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-}
-
-.pub-meta {
-    color: var(--text-muted);
-    font-size: 0.95rem;
 }
 
 ul.timeline {
@@ -276,88 +253,30 @@ ul.timeline li::before {
     border-radius: 50%;
 }
 
-/* Подвал */
-.footer {
-    text-align: center;
-    padding: 30px 20px;
-    margin-top: 20px;
-    color: var(--text-muted);
-    font-size: 0.85rem;
+/* =========================================
+   СЛОЖНЫЕ БЛОКИ (Research & Contact)
+   ========================================= */
+.research-container {
+    display: flex;
+    gap: 40px; 
+    align-items: flex-start;
 }
 
-/* =========================================
-   МОБИЛЬНАЯ ВЕРСИЯ (Адаптация)
-   ========================================= */
-@media (max-width: 900px) {
-    .header {
-        position: fixed;
-        padding: 15px 15px;
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    /* Увеличенный отступ, чтобы текст не прятался под шапку */
-    body {
-        padding-top: 240px; 
-    }
+.research-content-left {
+    flex: 1; 
+}
 
-    .profile-mini {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 10px;
-    }
+.research-photo-right {
+    flex: 0 0 350px; 
+}
 
-    .profile-img-mini {
-        width: 60px;
-        height: 60px;
-    }
+.research-photo-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+}
 
-    .profile-info h1 {
-        font-size: 1.2rem;
-        white-space: normal; /* Разрешаем перенос имени на телефоне */
-    }
-
-    .profile-info .title {
-        font-size: 0.8rem;
-        white-space: normal;
-    }
-
-    .header-right {
-        flex-direction: column;
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .top-nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .top-nav ul li a {
-        font-size: 0.85rem;
-    }
-
-    .lang-switcher {
-        margin-left: 0;
-        border-left: none;
-        border-top: 1px solid var(--border-color);
-        padding-left: 0;
-        padding-top: 15px;
-        margin-top: 10px;
-        justify-content: center;
-        width: 100%;
-    }
-    
-    .content {
-        padding: 20px 15px;
-    }
-
-    .section {
-        padding: 25px 20px;
-    }
-}/* --- СТИЛИ ДЛЯ КОНТАКТНОЙ ФОРМЫ --- */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -405,47 +324,9 @@ ul.timeline li::before {
     background-color: var(--accent-hover);
 }
 
-/* Настройка меню, чтобы 6 пунктов влезали в ряд */
-@media (min-width: 901px) {
-    .top-nav ul {
-        gap: 15px; /* Уменьшаем расстояние между кнопками */
-    }
-    .top-nav ul li a {
-        font-size: 0.85rem; /* Чуть меньше шрифт для меню */
-    }
-}/* --- СТИЛИ ДЛЯ СТРАНИЦЫ RESEARCH (ДВЕ КОЛОНКИ) --- */
-.research-container {
-    display: flex;
-    gap: 40px; /* Расстояние между текстом и фото */
-    align-items: flex-start;
-}
-
-.research-content-left {
-    flex: 1; /* Занимает все свободное место слева */
-}
-
-.research-photo-right {
-    flex: 0 0 350px; /* Фиксированная ширина для фото на больших экранах */
-}
-
-.research-photo-right img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Легкая тень для красоты */
-}
-
-/* Адаптация под мобильные устройства */
-@media (max-width: 900px) {
-    .research-container {
-        flex-direction: column; /* На телефонах фото уйдет под текст */
-    }
-    .research-photo-right {
-        flex: none;
-        width: 100%;
-        margin-top: 20px;
-    }
-}/* --- СТИЛИ ДЛЯ ГОРИЗОНТАЛЬНОЙ ФОТО-ЛЕНТЫ --- */
+/* =========================================
+   ГОРИЗОНТАЛЬНАЯ ФОТО-ЛЕНТА
+   ========================================= */
 .photo-bar-container {
     margin-top: 50px;
     padding-top: 30px;
@@ -454,65 +335,46 @@ ul.timeline li::before {
 
 .photo-scroll-wrapper {
     width: 100%;
-    overflow-x: auto; /* Включаем горизонтальный скролл */
-    padding-bottom: 15px; /* Место для полосы прокрутки */
+    overflow-x: auto; 
+    padding-bottom: 15px; 
     cursor: grab;
-    scroll-snap-type: x mandatory; /* Фото будут "прилипать" при скролле */
-    -webkit-overflow-scrolling: touch; /* Плавный скролл на iPhone */
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch; 
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
 }
 
-/* Стилизация полосы прокрутки (делаем её тонкой и аккуратной) */
 .photo-scroll-wrapper::-webkit-scrollbar {
-    height: 6px;
-}
-.photo-scroll-wrapper::-webkit-scrollbar-track {
-    background: var(--bg-color);
-}
-.photo-scroll-wrapper::-webkit-scrollbar-thumb {
-    background: var(--border-color);
-    border-radius: 10px;
+    display: none; 
 }
 
 .photo-bar {
-    display: flex; /* Выстраиваем в одну линию */
+    display: flex; 
     gap: 15px;
 }
 
 .photo-item {
-    flex: 0 0 auto; /* Позволяем ширине меняться в зависимости от пропорций фото */
-    height: 300px; /* Фиксируем одинаковую высоту для всей ленты */
+    flex: 0 0 auto; 
+    height: 300px; 
     overflow: hidden;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     scroll-snap-align: start;
-    background-color: #f8f9fa; /* Светлый фон на случай небольших отступов */
+    background-color: #f8f9fa; 
 }
 
 .photo-item img {
-    width: auto; /* Ширина подстроится автоматически, чтобы фото не искажалось */
-    height: 100%; /* Картинка вытянется на всю высоту блока (300px) */
-    object-fit: contain; /* ГЛАВНОЕ ПРАВИЛО: фото помещается целиком, без обрезки */
+    width: auto; 
+    height: 100%; 
+    object-fit: contain; 
     transition: transform 0.3s ease;
     display: block;
-}
-
-/* На мобильных устройствах сделаем ленту чуть пониже, чтобы она аккуратно смотрелась */
-@media (max-width: 600px) {
-    .photo-item {
-        height: 250px;
-    }
 }
 
 .photo-item:hover img {
     transform: scale(1.05);
 }
 
-/* На мобильных телефонах сделаем фото чуть меньше, чтобы было видно, что есть продолжение */
-@media (max-width: 600px) {
-    .photo-item {
-        flex: 0 0 250px;
-    }
-}/* --- СТИЛИ ДЛЯ КНОПОК ГАЛЕРЕИ --- */
 .gallery-wrapper {
     position: relative;
     display: flex;
@@ -523,9 +385,9 @@ ul.timeline li::before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
+    background-color: rgba(255, 255, 255, 0.9); 
     border: 1px solid var(--border-color);
-    border-radius: 50%; /* Круглая форма */
+    border-radius: 50%; 
     width: 44px;
     height: 44px;
     font-size: 1.2rem;
@@ -535,7 +397,7 @@ ul.timeline li::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.15); /* Мягкая тень */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15); 
     transition: all 0.3s ease;
 }
 
@@ -545,31 +407,96 @@ ul.timeline li::before {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-.left-btn {
-    left: -22px; /* Выступает за левый край */
+.left-btn { left: -22px; }
+.right-btn { right: -22px; }
+
+/* =========================================
+   ПОДВАЛ
+   ========================================= */
+.footer {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 20px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
 }
 
-.right-btn {
-    right: -22px; /* Выступает за правый край */
+/* =========================================
+   АДАПТИВНОСТЬ (Планшеты и Мобильные)
+   ========================================= */
+@media (min-width: 901px) {
+    .top-nav ul { gap: 15px; }
+    .top-nav ul li a { font-size: 0.85rem; }
 }
 
-/* Скрываем стандартную полосу прокрутки, так как теперь есть кнопки */
-.photo-scroll-wrapper::-webkit-scrollbar {
-    display: none;
-}
-.photo-scroll-wrapper {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-
-/* На мобильных телефонах прячем кнопки, там удобнее просто свайпать пальцем */
-@media (max-width: 768px) {
-    .gallery-btn {
-        display: none;
+@media (max-width: 900px) {
+    .header {
+        position: fixed;
+        padding: 15px 15px;
+        flex-direction: column;
+        gap: 15px;
     }
-/* Скрываем иконку книги в шапке на мобильных устройствах */
-@media (max-width: 768px) {
-    .linguistic-logo {
-        display: none !important;
+    body { padding-top: 240px; }
+    
+    .profile-mini {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
     }
-}}
+    .profile-img-mini {
+        width: 60px;
+        height: 60px;
+    }
+    .profile-info h1 {
+        font-size: 1.2rem;
+        white-space: normal; 
+    }
+    .profile-info .title {
+        font-size: 0.8rem;
+        white-space: normal;
+    }
+    .header-right {
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+    }
+    .top-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+    .top-nav ul li a { font-size: 0.85rem; }
+    
+    .lang-switcher {
+        margin-left: 0;
+        border-left: none;
+        border-top: 1px solid var(--border-color);
+        padding-left: 0;
+        padding-top: 15px;
+        margin-top: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .content { padding: 20px 15px; }
+    .section { padding: 25px 20px; }
+    .research-container { flex-direction: column; }
+    .research-photo-right {
+        flex: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .linguistic-logo { display: none !important; }
+    .gallery-btn { display: none; }
+}
+
+@media (max-width: 600px) {
+    .photo-item {
+        height: 250px;
+        flex: 0 0 250px;
+    }
+}
