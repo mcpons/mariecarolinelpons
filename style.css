@@ -2,10 +2,10 @@
    БАЗОВЫЕ НАСТРОЙКИ И ЦВЕТА
    ========================================= */
 :root {
-    --bg-color: #FCFBF8;
-    --header-bg: #F3EFE6;
-    --text-main: #2C3E50;
-    --text-muted: #6C7A89;
+    --bg-color: #FFFAF0;
+    --header-bg: #e7efed;
+    --text-main: #333333;
+    --text-muted: #191970;
     --accent: #34495E;
     --accent-hover: #2C3E50;
     --border-color: #DFE6E9;
