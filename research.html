@@ -9,9 +9,9 @@
 </head>
 <body>
 
-<header class="header">
+    <header class="header">
         <div class="profile-mini">
-            <img src="mariefoto.jpg" alt="Marie Caroline Pons" class="profile-img-mini" draggable="false" oncontextmenu="return false;">
+            <img src="mariefoto.jpg" alt="Marie Caroline Pons" class="profile-img-mini" draggable="false" oncontextmenu="false">
             <div class="profile-info">
                 <h1>Marie-Caroline L. Pons</h1>
                 <p class="title">Ph.D. in Linguistics</p>
@@ -19,10 +19,10 @@
         </div>
         
         <div class="header-right">
-           <nav class="top-nav">
+            <nav class="top-nav">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="research.html">RESEARCH</a></li>
+                    <li><a href="research.html" class="active">RESEARCH</a></li>
                     <li><a href="publications.html">PUBLICATIONS</a></li>
                     <li><a href="talks.html">TALKS</a></li>
                     <li><a href="teaching.html">TEACHING</a></li>
@@ -30,56 +30,50 @@
                 </ul>
             </nav>
             <div class="lang-switcher">
-                <a href="index.html" class="active-lang">EN</a>
+                <a href="research.html" class="active-lang">EN</a>
                 <a href="research_fr.html">FR</a>
-                <a href="index_np.html">Np</a>
+                <a href="#">NE</a>
             </div>
         </div>
     </header>
+
     <main class="content">
-        <section class="section">
-            <h2>Research</h2>
+        <section class="section" style="max-width: 800px; margin: 0 auto; width: 100%; display: block;">
             
+            <h2 style="font-size: 2.2rem; color: var(--accent); margin-bottom: 30px;">Research</h2>
+
             <div class="research-container">
+                
                 <div class="research-content-left">
-                    <p class="lead-text">Here you will find an overview of the documentation and description projects I have led across four Himalayan languages spoken in Nepal since 2011:</p>
+                    <p class="lead-text" style="margin-bottom: 40px; font-size: 1.1rem; line-height: 1.8;">
+                        Here is an overview of the documentation and description projects I have been conducting since 2011 on four Himalayan languages spoken in Nepal:
+                    </p>
 
-                    <div style="margin-top: 30px;">
-                        <div class="publication-item" style="padding-bottom: 10px; margin-bottom: 10px;">
-                            <h3 style="font-size: 1.4rem; margin: 0;">
-                                <a href="research_chepang.html" style="color: var(--accent); text-decoration: none;">&bull; Chepang</a>
-                            </h3>
-                        </div>
-
-                        <div class="publication-item" style="padding-bottom: 10px; margin-bottom: 10px;">
-                            <h3 style="font-size: 1.4rem; margin: 0;">
-                                <a href="research_magar.html" style="color: var(--accent); text-decoration: none;">&bull; Magar</a>
-                            </h3>
-                        </div>
-
-                        <div class="publication-item" style="border-bottom: none; padding-bottom: 10px;">
-                            <h3 style="font-size: 1.4rem; margin: 0;">
-                                <a href="research_kham_bhoto.html" style="color: var(--accent); text-decoration: none;">&bull; Khamci & Bhoto</a>
-                            </h3>
-                        </div>
-                    </div>
+                    <ul style="list-style-type: none; margin-left: 0; line-height: 2.5; font-size: 1.3rem; font-weight: 600; font-family: 'Lora', serif;">
+                        
+                        <li>&bull; <a href="research_chepang.html" style="color: var(--accent); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--link-color)'" onmouseout="this.style.color='var(--accent)'">Chepang</a></li>
+                        <hr style="border: none; border-top: 1px solid var(--border-color); margin: 15px 0;">
+                        
+                        <li>&bull; <a href="research_magar.html" style="color: var(--accent); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--link-color)'" onmouseout="this.style.color='var(--accent)'">Magar</a></li>
+                        <hr style="border: none; border-top: 1px solid var(--border-color); margin: 15px 0;">
+                        
+                        <li>&bull; <a href="research_kham_bhoto.html" style="color: var(--accent); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='var(--link-color)'" onmouseout="this.style.color='var(--accent)'">Khamci & Bhoto</a></li>
+                        
+                    </ul>
                 </div>
 
                 <div class="research-photo-right">
-                    <img src="forresearch2.jpg" alt="Field Research in Nepal">
+                    <img src="forresearch2.jpg" alt="Fieldwork in Nepal" draggable="false" oncontextmenu="false">
                 </div>
+
             </div>
+
         </section>
     </main>
+
     <footer class="footer">
-        <p>&copy; 2026 Marie-Caroline L. Pons. All rights reserved. | Last updated: April 2026</p>
+        <p>&copy; 2026 Marie-Caroline L. Pons. All rights reserved.</p>
     </footer>
-<script>
-        document.addEventListener('contextmenu', function(e) {
-            if (e.target.tagName === 'IMG') {
-                e.preventDefault();
-            }
-        });
-    </script>
+
 </body>
 </html>
