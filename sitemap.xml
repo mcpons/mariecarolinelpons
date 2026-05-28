@@ -1,107 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://mcpons.github.io/mariecarolinelpons/</loc>
-  <lastmod>2026-05-28T11:26:18+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://mcpons.github.io/mariecarolinelpons/index.html</loc>
-  <lastmod>2026-05-28T11:26:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mcpons.github.io/mariecarolinelpons/research.html</loc>
-  <lastmod>2026-05-28T11:26:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mcpons.github.io/mariecarolinelpons/publications.html</loc>
-  <lastmod>2026-05-28T11:26:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mcpons.github.io/mariecarolinelpons/talks.html</loc>
-  <lastmod>2026-05-28T11:26:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mcpons.github.io/mariecarolinelpons/teaching.html</loc>
-  <lastmod>2026-05-28T11:26:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mcpons.github.io/mariecarolinelpons/contact.html</loc>
-  <lastmod>2026-05-28T11:26:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mcpons.github.io/mariecarolinelpons/index_fr.html</loc>
-  <lastmod>2026-05-28T11:26:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mcpons.github.io/mariecarolinelpons/research_fr.html</loc>
-  <lastmod>2026-05-28T11:26:18+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mcpons.github.io/mariecarolinelpons/research_chepang.html</loc>
-  <lastmod>2026-05-28T11:26:18+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mcpons.github.io/mariecarolinelpons/research_magar.html</loc>
-  <lastmod>2026-05-28T11:26:18+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mcpons.github.io/mariecarolinelpons/research_kham_bhoto.html</loc>
-  <lastmod>2026-05-28T11:26:18+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mcpons.github.io/mariecarolinelpons/publications_fr.html</loc>
-  <lastmod>2026-05-28T11:26:18+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mcpons.github.io/mariecarolinelpons/talks_fr.html</loc>
-  <lastmod>2026-05-28T11:26:18+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mcpons.github.io/mariecarolinelpons/teaching_fr.html</loc>
-  <lastmod>2026-05-28T11:26:18+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mcpons.github.io/mariecarolinelpons/contact_fr.html</loc>
-  <lastmod>2026-05-28T11:26:18+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mcpons.github.io/mariecarolinelpons/research_chepang_fr.html</loc>
-  <lastmod>2026-05-28T11:26:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mcpons.github.io/mariecarolinelpons/research_magar_fr.html</loc>
-  <lastmod>2026-05-28T11:26:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mcpons.github.io/mariecarolinelpons/research_kham_bhoto_fr.html</loc>
-  <lastmod>2026-05-28T11:26:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://mcpons.github.io/mariecarolinelpons/</loc>
+    <lastmod>2026-05-28T11:26:18+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://mcpons.github.io/mariecarolinelpons/index.html</loc>
+    <lastmod>2026-05-28T11:26:18+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mcpons.github.io/mariecarolinelpons/research.html</loc>
+    <lastmod>2026-05-28T11:26:18+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mcpons.github.io/mariecarolinelpons/publications.html</loc>
+    <lastmod>2026-05-28T11:26:18+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mcpons.github.io/mariecarolinelpons/talks.html</loc>
+    <lastmod>2026-05-28T11:26:18+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mcpons.github.io/mariecarolinelpons/teaching.html</loc>
+    <lastmod>2026-05-28T11:26:18+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mcpons.github.io/mariecarolinelpons/contact.html</loc>
+    <lastmod>2026-05-28T11:26:18+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mcpons.github.io/mariecarolinelpons/index_fr.html</loc>
+    <lastmod>2026-05-28T11:26:18+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mcpons.github.io/mariecarolinelpons/research_fr.html</loc>
+    <lastmod>2026-05-28T11:26:18+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://mcpons.github.io/mariecarolinelpons/research_chepang.html</loc>
+    <lastmod>2026-05-28T11:26:18+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://mcpons.github.io/mariecarolinelpons/research_magar.html</loc>
+    <lastmod>2026-05-28T11:26:18+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://mcpons.github.io/mariecarolinelpons/research_kham_bhoto.html</loc>
+    <lastmod>2026-05-28T11:26:18+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://mcpons.github.io/mariecarolinelpons/publications_fr.html</loc>
+    <lastmod>2026-05-28T11:26:18+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://mcpons.github.io/mariecarolinelpons/talks_fr.html</loc>
+    <lastmod>2026-05-28T11:26:18+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://mcpons.github.io/mariecarolinelpons/teaching_fr.html</loc>
+    <lastmod>2026-05-28T11:26:18+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://mcpons.github.io/mariecarolinelpons/contact_fr.html</loc>
+    <lastmod>2026-05-28T11:26:18+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://mcpons.github.io/mariecarolinelpons/research_chepang_fr.html</loc>
+    <lastmod>2026-05-28T11:26:18+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://mcpons.github.io/mariecarolinelpons/research_magar_fr.html</loc>
+    <lastmod>2026-05-28T11:26:18+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://mcpons.github.io/mariecarolinelpons/research_kham_bhoto_fr.html</loc>
+    <lastmod>2026-05-28T11:26:18+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
 </urlset>
