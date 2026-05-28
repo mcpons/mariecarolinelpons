@@ -512,13 +512,18 @@ img {
 }
 /* Адаптация для мобильных устройств */
 @media (max-width: 768px) {
+    body {
+        padding-top: 0 !important; /* Убираем глобальный отступ, толкающий шапку вниз */
+    }
+
     .header {
-        position: relative; /* Открепляем шапку, чтобы она прокручивалась вместе с сайтом */
-        padding-bottom: 20px; 
+        position: relative; /* Открепляем шапку */
+        padding-bottom: 20px;
+        margin-top: 0; /* На всякий случай обнуляем внешний отступ */
     }
     
     .content {
-        margin-top: 0; /* Убираем лишний отступ, который был нужен для фиксированной шапки */
-        padding-top: 20px; 
+        margin-top: 0; /* Убираем лишний отступ */
+        padding-top: 20px;
     }
 }
