@@ -510,3 +510,15 @@ img {
     -moz-user-select: none;
     -ms-user-select: none;
 }
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .header {
+        position: relative; /* Открепляем шапку, чтобы она прокручивалась вместе с сайтом */
+        padding-bottom: 20px; 
+    }
+    
+    .content {
+        margin-top: 0; /* Убираем лишний отступ, который был нужен для фиксированной шапки */
+        padding-top: 20px; 
+    }
+}
