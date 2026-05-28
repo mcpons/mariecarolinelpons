@@ -510,6 +510,32 @@ img {
     -moz-user-select: none;
     -ms-user-select: none;
 }
+/* --- Макет для главной страницы (Обтекание текстом) --- */
+.home-image-floated {
+    float: right; /* Прижимаем фото к правому краю */
+    width: 320px; /* Задаем размер фото */
+    margin: 5px 0 20px 30px; /* Отступы: 5px сверху, 0 справа, 20px снизу, 30px слева (от текста) */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Очистка обтекания (техническая деталь, чтобы секция не ломалась) */
+.section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* На мобильных телефонах фото встанет по центру над текстом */
+@media (max-width: 768px) {
+    .home-image-floated {
+        float: none; /* Отменяем обтекание на узком экране */
+        display: block;
+        margin: 0 auto 20px auto; /* Центрируем фото */
+        max-width: 100%;
+        width: 300px;
+    }
+}
 /* Адаптация для мобильных устройств */
 @media (max-width: 768px) {
     body {
